@@ -1,0 +1,31 @@
+# !/usr/bin/bash
+#Display a prompt
+echo "Hello, welcome to my script"
+#Display the current time
+echo "It is "
+date
+echo "---------------------------"
+#Create a directory
+mkdir mydirectory1
+#Change directory to mydirectory we just made
+cd mydirectory1
+#Create three files
+touch file1 file2 file3
+#print current processes running into file1
+ps > file1
+#Display file 1 content
+cat file1
+echo "------------------------------"
+#See who is logged into computer into file2
+who > file2
+#Display file 2 content
+cat file2
+echo "-------------------------------"
+#Display command history into file3
+history > file3
+cat file3
+echo "--------------------------------"
+#File 3 stats
+stat file3
+echo "-------------------------------"
+echo "Thanks for running my script"
